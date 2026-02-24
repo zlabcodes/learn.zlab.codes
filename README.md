@@ -64,3 +64,41 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+# LMS Dashboard (Vue 3 + Vuetify + Pinia + Vite)
+
+## Structure
+
+- `resources/js/components/`: Reusable feature-based components (Sidebar, Topbar, CourseCard, StatsWidget, NotificationList)
+- `resources/js/layouts/`: Layouts for dashboard and future expansion
+- `resources/js/views/`: Route views (DashboardView, LoginView)
+- `resources/js/router/`: Vue Router config, route-based code splitting
+- `resources/js/store/`: Pinia stores for state management
+- `resources/js/utils/`: Centralized API utilities
+
+## Best Practices
+- Mobile-first, responsive with Vuetify grid
+- Route-based code splitting/lazy loading
+- Environment-based config via `.env`
+- Centralized API calls with Axios
+- State management with Pinia
+- Auth-based routing with navigation guards
+- Prop validation in all components
+- Error handling and loading states
+- ESLint/Prettier for code quality
+- All components documented in code
+
+## Dummy API Endpoints
+- `/api/courses` — List of courses
+- `/api/users` — List of users
+- `/api/notifications` — List of notifications
+- `/api/login` — Auth endpoint
+
+## Future Expansion
+- Add more features by creating new components, views, and stores in the respective folders.
+- Extend layouts for new dashboard sections.
+- Add more routes and navigation items as needed.
+
+---
+
+For details, see code comments in each component.
